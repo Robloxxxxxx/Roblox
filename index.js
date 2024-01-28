@@ -1,7 +1,6 @@
 require('dotenv').config();
 const { Client } = require('discord.js-selfbot-v13');
 const { Webhook, MessageBuilder } = require('minimal-discord-webhook-node');
-const keep_alive = require('./keep_alive.js');
 const twvoucher = require('@fortune-inc/tw-voucher');
 const client = new Client({
   checkUpdate: false
@@ -44,9 +43,9 @@ client.on('messageCreate', async (message) => {
         .addField('- จำนวนเงิน', `_ _\n${redeemed.amount}\n_ _\n_ _`)
         .addField('- หมดอายุ', `_ _ <t:64441540020:R> _ _`)
         .setColor('#ffffff')
-        .setImage('https://media.discordapp.net/attachments/1183701346420015106/1191391429021413407/wa.gif?ex=65a544bb&is=6592cfbb&hm=dbedf38ec411fd4a165a05489dbc3dd4e6692e02b128898a5ee23177fb01db77&=')
+        .setImage('https://media.discordapp.net/attachments/1198466129664950374/1201014483963883641/ayasdad.gif?ex=65c846e6&is=65b5d1e6&hm=174b969c24119e5e9d6ca2ebd72478662cfef7e908466b1a2a796ee3b18a909e&=&width=704&height=396')
         .setThumbnail('https://media.discordapp.net/attachments/1190633389477351514/1191380448488730674/woah.gif?ex=65a53a81&is=6592c581&hm=49b5624636145958e031646e8ed6910f8fda911f9b14a6c7ea08126f432ff23a&=')
-        .setFooter('Fake Link Club Aungpou', 'https://media.discordapp.net/attachments/1190633389477351514/1191379907251535932/woah.gif?ex=65a53a00&is=6592c500&hm=6c139b62b3b74f8ec4287392f49b6605e5199da16a37496271b53d790778d3e3&=')
+        .setFooter('ADMINISTRATOR | Fake Link Club Aungpou', 'https://media.discordapp.net/attachments/1190633389477351514/1191379907251535932/woah.gif?ex=65a53a00&is=6592c500&hm=6c139b62b3b74f8ec4287392f49b6605e5199da16a37496271b53d790778d3e3&=')
         .setTimestamp();
       hook.send(embed)
       console.log(" ");
@@ -61,9 +60,9 @@ client.on('messageCreate', async (message) => {
         .addField('- ลิ้งค์ซอง', `${fullLink}${voucherCode}\n_ _\n_ _`)
         .addField('- หมดอายุ', `_ _ <t:64441540020:R> _ _`)
         .setColor('#ffffff')
-        .setImage('https://media.discordapp.net/attachments/1183701346420015106/1191391429021413407/wa.gif?ex=65a544bb&is=6592cfbb&hm=dbedf38ec411fd4a165a05489dbc3dd4e6692e02b128898a5ee23177fb01db77&=')
+        .setImage('https://media.discordapp.net/attachments/1198466129664950374/1201014483963883641/ayasdad.gif?ex=65c846e6&is=65b5d1e6&hm=174b969c24119e5e9d6ca2ebd72478662cfef7e908466b1a2a796ee3b18a909e&=&width=704&height=396')
         .setThumbnail('https://media.discordapp.net/attachments/1190633389477351514/1191380448488730674/woah.gif?ex=65a53a81&is=6592c581&hm=49b5624636145958e031646e8ed6910f8fda911f9b14a6c7ea08126f432ff23a&=')
-        .setFooter('Fake Link Club Aungpou', 'https://media.discordapp.net/attachments/1190633389477351514/1191379907251535932/woah.gif?ex=65a53a00&is=6592c500&hm=6c139b62b3b74f8ec4287392f49b6605e5199da16a37496271b53d790778d3e3&=')
+        .setFooter('ADMINISTRATOR | Fake Link Club Aungpou', 'https://media.discordapp.net/attachments/1190633389477351514/1191379907251535932/woah.gif?ex=65a53a00&is=6592c500&hm=6c139b62b3b74f8ec4287392f49b6605e5199da16a37496271b53d790778d3e3&=')
         .setTimestamp();
       hook_f.send(embed_f);
       console.log(" ");
