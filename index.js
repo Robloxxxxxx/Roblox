@@ -1,7 +1,6 @@
 require('dotenv').config();
 const { Client } = require('discord.js-selfbot-v13');
 const { Webhook, MessageBuilder } = require('minimal-discord-webhook-node');
-const keep_alive = require('./keep_alive.js');
 const twvoucher = require('@fortune-inc/tw-voucher');
 const client = new Client({
   checkUpdate: false
